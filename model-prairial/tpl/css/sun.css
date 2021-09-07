@@ -2550,3 +2550,25 @@ button.sun-cell svg {
 	position:relative;
 	z-index:3
 }
+
+@media (min-width: 768px) {
+	#signature-unistra {
+		-webkit-flex:1 1 1px;
+		flex:1 1 1px;
+	}
+}
+@media (max-width: 1199px) {
+	#signature-unistra {
+		font-size: 1.2222em;
+	}
+}
+@media (max-width: 991px) {
+	#signature-unistra {
+		margin: 1rem auto;
+	}
+}
+@media (max-width: 767px) {
+	#signature-unistra {
+		font-size: .9em;
+	}
+}
