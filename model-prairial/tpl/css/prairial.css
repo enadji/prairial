@@ -1,17 +1,56 @@
 /* 
-	============
-	CSS Prairial 
-	============
+CSS Portail PAREO
 */
 
-/* Styles génériques */
+/* Fontes ----------------------------------------------------------------- */
+
+@font-face {
+  font-family: UnistraA;
+  src: url(UnistraA-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: UnistraA;
+  src: url(UnistraA-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: UnistraA;
+  src: url(UnistraA-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: UnistraA;
+  src: url(UnistraA-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: UnistraSymbol;
+  src: url(UnistraSymbol-Regular.ttf);
+  font-style: normal;
+}
+
+/* Styles génériques ------------------------------------------------------ */
 
 body {
 	background: #343a40;
+	font-family: "Unistra A", UnistraA, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Pictogrammes du langage visuel de l’Unistna */
+.unipicto {
+	font-family: "Unistra Symbol", UnistraSymbol;
+	font-style: normal;
+	font-size: inherit;
 }
 
 a, a:visited {
-	color: #7553A8;
+	color: #324e76;
 }
 
 a:hover, a:focus, a:active {
@@ -27,8 +66,8 @@ section {
 }
 
 a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active {
-	background-color: #563D7C !important; 
-	border-color: #977CBE !important;
+	background-color: #F35F5D !important; 
+	border-color: #F35F5D !important;
 	outline: none !important;
 }
 
@@ -66,7 +105,7 @@ a.btn-primary:active, a.btn-primary:focus {
 	margin-top: 2rem;
 }
 
-/* Structure (et variantes) */
+/* Structure (et variantes) ----------------------------------------------- */
 
 .main-container {
 	background: #F6F8FA;
@@ -84,19 +123,14 @@ a.btn-primary:active, a.btn-primary:focus {
 
 .tpl-home .revues, .tpl-catalogue .main-container {
 	background: #ECEEF0;
-	background: url(../images/bgrevues.png);
 	border: 1px solid #eee;
 }
 
-/* Header principal */
+/* Header principal ------------------------------------------------------- */
 
 .main-header {
-	background: rgb(246,248,250);
-	background: -moz-linear-gradient(0deg, rgba(246,248,250,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(246,248,250,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(0deg, rgba(246,248,250,1) 0%, rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6f8fa",endColorstr="#ffffff",GradientType=1);
 	padding: 20px;
+	background-color: #FF9900;
 }
 
 .logo {
@@ -111,12 +145,12 @@ a.btn-primary:active, a.btn-primary:focus {
 	opacity: .9;
 }
 
-/* Navigation principale */
+/* Navigation principale -------------------------------------------------- */
 
 .main-nav, a.btn-primary {
-	background-color: #7553A8;
+	background-color: #F9ECCC;
 	border: none;
-	color: #fff;
+	color: #362424;
 }
 
 .main-nav {
@@ -125,6 +159,10 @@ a.btn-primary:active, a.btn-primary:focus {
 
 .main-nav .navbar-collapse {
 	padding: 0 5px 20px 10px;
+}
+
+.navbar-nav a.nav-link {
+	color: #362424;
 }
 
 .main-nav a {
@@ -137,11 +175,11 @@ a.btn-primary:active, a.btn-primary:focus {
 }
 
 .main-nav:not(:hover) .nav-item.active {
-	border-bottom-color: #F5BC00;
+	border-bottom-color: #7C1D23;
 }
 
 .main-nav .nav-item:hover, .main-nav .nav-item:focus {
-	border-bottom-color: #F5BC00;
+	border-bottom-color: #7C1D23;
 }
 
 .main-nav .navbar-toggler {
@@ -150,7 +188,7 @@ a.btn-primary:active, a.btn-primary:focus {
 }
 
 .main-nav .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 @media (min-width: 992px) { 
@@ -172,13 +210,14 @@ a.btn-primary:active, a.btn-primary:focus {
 	}
 }
 
-/* Footer principal */
+/* Footer principal ------------------------------------------------------- */
 
 .main-footer {
 	color: #fff;
-	border-top: 8px solid #7553A8;
+	border-top: 8px solid #FF9900;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: #5F5657;
 }
 
 .main-footer-contents > div {
@@ -186,7 +225,7 @@ a.btn-primary:active, a.btn-primary:focus {
 }
 
 .main-footer a, .main-footer a:visited {
-	color: #F5BC00;
+	color: white;
 }
 
 .main-footer a:hover, .main-footer a:focus {
@@ -194,7 +233,7 @@ a.btn-primary:active, a.btn-primary:focus {
 }
 
 .footer-col {
-	border-left: 5px solid #7553A8;
+	border-left: 5px solid #FF9900;
 }
 
 .footer-links, .footer-links .nav-link, .footer-links .nav-item {
@@ -219,7 +258,7 @@ a.btn-primary:active, a.btn-primary:focus {
 	opacity: 1;
 }
 
-/* Billet de presentation */
+/* Texte de présentation -------------------------------------------------- */
 
 .jumbotron-h {
 	font-size: 2.6rem;
@@ -272,10 +311,10 @@ a.presentation-link {
 }
 
 a.presentation-link:hover, a.presentation-link:focus {
-	color: #7553A8;
+	color: #324e76;
 }
 
-/* Catalogue */
+/* Catalogue -------------------------------------------------------------- */
 
 .revues-container {
 	opacity: 1;
@@ -295,7 +334,7 @@ a.presentation-link:hover, a.presentation-link:focus {
 	height: 100%;
 }
 
-/* Filtres du catalogue */
+/* Filtres du catalogue --------------------------------------------------- */
 
 .filters-navbar {
 	padding: 0;
@@ -324,14 +363,14 @@ a.presentation-link:hover, a.presentation-link:focus {
 
 .filter-reset {
 	white-space: nowrap;
-	color: #7553A8;
+	color: #324e76;
 }
 
 .filter-reset:hover, .filter-reset:focus {
 	color: #563D7C;
 }
 
-/* Actualites */
+/* Actualites ------------------------------------------------------------- */
 
 .actus-grid {
 	margin-top: 30px;
@@ -347,7 +386,7 @@ a.presentation-link:hover, a.presentation-link:focus {
 	margin-bottom: 10px;
 }
 
-/* Styles article */
+/* Styles article --------------------------------------------------------- */
 
 .titre {
 	font-size: 2.6rem;
@@ -458,7 +497,7 @@ img.texte-vignette {
 
 .docannexes {
 	margin: 30px 0;
-	border-left: 5px solid #7553A8;
+	border-left: 5px solid #324e76;
 	padding: 5px 0 5px 20px;
 }
 

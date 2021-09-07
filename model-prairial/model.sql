@@ -407,6 +407,8 @@ INSERT INTO #_TP_entitytypes_entitytypes (identitytype, identitytype2, cond) VAL
 # Dumping data for table 'characterstyles'
 #
 
+INSERT INTO #_TP_characterstyles (id, style, surrounding, conversion, greedy, rank, status, upd, otx) VALUES (1, 'unipicto', '-*', '<span class="unipicto">', 0, 3, 1, '2021-21-06 00:00:00', '//*[@rend=\'unipicto\']'),
+
 
 #
 # Dumping data for table 'internalstyles'
@@ -433,6 +435,7 @@ INSERT INTO #_TP_internalstyles (id, style, surrounding, conversion, greedy, ran
 (28, 'definitiondeterme', '-*', '', 0, 26, 1, '2006-03-02 09:52:37', ''),
 (32, 'creditillustration,crditillustration,creditsillustration,crditsillustration,illustrationcredits,creditosfigura', '-*', '', 0, 30, 1, '2013-09-06 10:03:22', '//*[@rend=\'figure-license\']'),
 (34, 'encadre,box,cuadro', '-*', '', 0, 32, 1, '2013-09-06 10:03:22', '//*[@rend=\'box\']');
+
 DELETE FROM #_TP_optiongroups;
 # # Database: 'lodelpre_prairial'# 
 #
@@ -444,6 +447,7 @@ INSERT INTO #_TP_optiongroups (id, idparent, name, title, altertitle, comment, l
 (9, 0, 'optionsgenerales', 'Options générales', '<r2r:ml lang="pt">Opções gerais</r2r:ml>', '', '', 1, 8, 1, '2011-09-21 13:23:28'),
 (10, 0, 'optionsaffichage', 'Options d\'affichage', '<r2r:ml lang="pt">Opções de visualização</r2r:ml>', '', '', 1, 9, 1, '2011-10-07 09:24:29');
 DELETE FROM #_TP_options;
+
 # # Database: 'lodelpre_prairial'# 
 #
 # Dumping data for table 'options'
@@ -481,6 +485,7 @@ INSERT INTO #_TP_options (id, idgroup, name, title, type, defaultvalue, comment,
 (14203, 10, 'affichageindexpersonnes', 'Affichage des index de personnes', 'list', 'First name Surname', '', 40, 33, 1, '2012-09-12 00:04:56', 'select', 'First name Surname, Surname; First name'),
 (14204, 10, 'affichageremerciements', 'Affichage des remerciements', 'list', 'top', '', 40, 34, 1, '2013-07-29 15:53:58', 'editable', 'top,bottom'),
 (14206, 9, 'emversion', 'Version du modèle éditorial', 'tinytext', '1.0.0', '', 40, 35, 1, '2015-07-20 12:24:46', 'display', '');
+
 # # Database: 'lodelpre_prairial'# 
 # --------------------------------------------------------
 
