@@ -529,3 +529,16 @@ img.texte-vignette {
 .docannexe__description {
 	color: #57636e;
 }
+
+.article ul li {
+	list-style-type: none;
+}
+
+.article ul li p.texte:before {
+	content: "\00B7";
+	position: absolute;
+	font-size: 3em;
+	font-family: "Unistra A", UnistraA, Arial, sans-serif;
+	margin: -0.55em 0 0 -0.3em;
+	color: #7c1d23;
+}
