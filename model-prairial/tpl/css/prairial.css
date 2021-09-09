@@ -298,6 +298,7 @@ div.lien-catalogue a {
 
 .list-text {
 	margin-left: 20px;
+	flex-grow: 1;
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover {
