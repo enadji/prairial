@@ -407,7 +407,7 @@ INSERT INTO #_TP_entitytypes_entitytypes (identitytype, identitytype2, cond) VAL
 # Dumping data for table 'characterstyles'
 #
 
-INSERT INTO #_TP_characterstyles (id, style, surrounding, conversion, greedy, rank, status, upd, otx) VALUES (1, 'unipicto', '-*', '<span class="unipicto">', 0, 3, 1, '2021-21-06 00:00:00', '//*[@rend=\'unipicto\']'),
+INSERT INTO #_TP_characterstyles (id, style, surrounding, conversion, greedy, rank, status, upd, otx) VALUES (1, 'unipicto', '-*', '<span class="unipicto" aria-hidden="true">', 0, 3, 1, '2021-21-06 00:00:00', '//*[@rend=\'unipicto\']'),
 
 
 #
