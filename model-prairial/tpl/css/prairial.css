@@ -50,7 +50,7 @@ body {
 }
 
 a, a:visited {
-	color: #324e76;
+	color: #7c1c23;
 }
 
 a:hover, a:focus, a:active {
@@ -470,12 +470,13 @@ p.texte + .legendeillustration, p.texte + .creditillustration, .legendeillustrat
 }
 
 p.encadre {
-  background-color: #D2DCE6;
+  background-color: #fbf5e7;
   margin-bottom: 0;
 }
 
 p.encadre + p.encadre {
 	margin-top: 0;
+	padding-top: 0;
 }
 
 img.texte-vignette {
@@ -507,7 +508,7 @@ img.texte-vignette {
 
 .docannexes {
 	margin: 30px 0;
-	border-left: 5px solid #324e76;
+	border-left: 5px solid #ff9900;
 	padding: 5px 0 5px 20px;
 }
 
@@ -541,4 +542,7 @@ img.texte-vignette {
 	font-family: "Unistra A", UnistraA, Arial, sans-serif;
 	margin: -0.55em 0 0 -0.3em;
 	color: #7c1d23;
+}
+.article a, .article a:visited {
+	text-decoration: underline;
 }
