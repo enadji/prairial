@@ -81,7 +81,7 @@
 		<DO>
 			<li class="docannexe">
 				<LOOP NAME="article_docannexes_item" TABLE="fichiers" WHERE="identity = '[#ID]' AND document != ''">
-					<p class="docannexe__title"><a href="[#DOCUMENT]">[#TITRE]</a> <span class="additional-info">([#DOCUMENT|getFileMime]&#160;&#8211;&#160;[#DOCUMENT|nicefilesize])</span></p>
+					<p class="docannexe__title"><a href="[#DOCUMENT]">[#TITRE]</a> <span class="additional-info">([#DOCUMENT|nicefilesize])</span></p>
 					<IF COND="[#DESCRIPTION]">
 						<div class="docannexe__description">[#DESCRIPTION|removetags('p')]</div>
 					</IF>
